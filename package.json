@@ -1,6 +1,6 @@
 {
   "name": "react-after-before-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple slider component for comparing images before and after",
   "main": "dist/build.js",
   "scripts": {
