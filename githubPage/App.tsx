@@ -3,7 +3,7 @@ import BeforeAfterSlider from '../src';
 
 import './app.scss';
 
-const IMG_BASE_PATH = '/react-before-after-slider-component';
+const IMG_BASE_PATH = '/react-after-before-slider';
 
 function createImageUrl(url: string): string {
   return window.location.host.includes('localhost')
