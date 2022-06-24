@@ -35,6 +35,7 @@ interface Props {
   onVisible?: () => void;
   onChangePercentPosition?: (newPosition: number) => void;
   delimiterColor?: string;
+  showAfterBeforeText?: boolean;
   feelsOnlyTheDelimiter?: boolean;
 }
 
@@ -121,6 +122,7 @@ export default function BeforeAfterSlider({
   onReady,
   onChangePercentPosition,
   delimiterColor,
+  showAfterBeforeText = true,
   feelsOnlyTheDelimiter = false,
 }: Props) {
   const classNames = ['before-after-slider'];
@@ -262,7 +264,7 @@ export default function BeforeAfterSlider({
       {Boolean(imagesWidth) && (
         <>
           <div className="before-after-slider__first-photo-container">
-            <span className="after-text">After</span>
+            {showAfterBeforeText && <span className="after-text">After</span>}
             <img
               style={imgStyles}
               src={firstImage.imageUrl}
@@ -275,7 +277,7 @@ export default function BeforeAfterSlider({
             className="before-after-slider__second-photo-container"
             style={secondImgContainerStyle}
           >
-            <span className="before-text">Before</span>
+            {showAfterBeforeText && <span className="before-text">Before</span>}
             <img
               style={imgStyles}
               src={secondImage.imageUrl}
