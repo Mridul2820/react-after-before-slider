@@ -1,12 +1,12 @@
 # React before after slider component
 
-Simple slider component for comparing images. Before and after.
+Simple slider component for comparing images before and after.
 
 [![screencast demo](./screencast.gif)](./screencast.gif)
 
 ## Demo
 
-https://smeleshkin.github.io/react-before-after-slider-component/
+https://mridul2820.github.io/react-after-before-slider/
 
 ## Build
 
@@ -15,28 +15,27 @@ npm run build:npm
 ## Basic usage
 
 ```
-npm install react-before-after-slider-component --save
+npm i react-after-before-slider --save
 ```
 
 Then use it in your app:
 
-```js
+```jsx
 import React from 'react';
-import ReactBeforeSliderComponent from 'react-before-after-slider-component';
-import 'react-before-after-slider-component/dist/build.css';
+import ReactBeforeSliderComponent from 'react-after-before-slider';
+import 'react-after-before-slider/dist/build.css';
 
 const FIRST_IMAGE = {
-  imageUrl: 'https://example.com/.../some-image.jpg',
+  imageUrl: 'https://example.com/.../some-image-1.jpg',
 };
 const SECOND_IMAGE = {
   imageUrl: 'https://example.com/.../some-image-2.jpg',
 };
-/* ... */
+
 <ReactBeforeSliderComponent
   firstImage={FIRST_IMAGE}
   secondImage={SECOND_IMAGE}
 />;
-/* ... */
 ```
 
 ## Props
