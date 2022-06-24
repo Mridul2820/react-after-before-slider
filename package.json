@@ -1,16 +1,17 @@
 {
-  "name": "react-before-after-slider-component",
-  "version": "1.1.3",
-  "description": "",
+  "name": "react-after-before-slider",
+  "version": "1.0.0",
+  "description": "Simple slider component for comparing images before and after",
   "main": "dist/build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:npm": "webpack --config webpack/npm.config.js --mode=production --env production --progress",
     "build:githubPages": "webpack --config webpack/githubPages.config.js --mode=production --env production --progress",
-    "build:githubPages:serve": "webpack serve --config webpack/githubPages.config.js --mode=development"
+    "build:githubPages:serve": "webpack serve --config webpack/githubPages.config.js --mode=development",
+    "format": "prettier --write ."
   },
   "types": "dist/index.d.ts",
-  "author": "smelesh23@gmail.com",
+  "author": "Mridul2820",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^17.0.2",
@@ -20,10 +21,13 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.0",
     "css-loader": "^5.2.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.3.1",
     "ignore-loader": "^0.1.2",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
+    "prettier": "^2.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass-loader": "^12.1.0",
@@ -40,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:smeleshkin/react-before-after-slider-component.git"
+    "url": "git+ssh://git@github.com:Mridul2820/react-after-before-slider.git"
   },
   "keywords": [
     "react",
