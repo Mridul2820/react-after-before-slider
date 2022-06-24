@@ -53,12 +53,3 @@ const SECOND_IMAGE = {
 | `onVisible`               | false    | function |         | On slider visible in viewport callback.                                              |
 | `onChangePercentPosition` | false    | function |         | On delimiter position update callback. Has new position parameter.                   |
 | `feelsOnlyTheDelimiter`   | false    | function | false   | Only the separator feels clicks. Not any zone of the component.                      |
-
-## Specific Types
-
-```ts
-interface Image {
-  imageUrl: string;
-  alt?: string;
-}
-```
