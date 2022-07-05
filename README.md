@@ -1,4 +1,4 @@
-# React before after slider component
+# React after before slider component
 
 Simple slider component for comparing images before and after.
 
