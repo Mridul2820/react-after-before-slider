@@ -267,10 +267,10 @@ export default function BeforeAfterSlider({
             {showAfterBeforeText && <span className="after-text">After</span>}
             <img
               style={imgStyles}
-              src={firstImage.imageUrl}
+              src={firstImage?.imageUrl}
               onLoad={onImageLoad}
               draggable={false}
-              alt={firstImage.alt}
+              alt={firstImage?.alt || 'After Image'}
             />
           </div>
           <div
@@ -280,10 +280,10 @@ export default function BeforeAfterSlider({
             {showAfterBeforeText && <span className="before-text">Before</span>}
             <img
               style={imgStyles}
-              src={secondImage.imageUrl}
+              src={secondImage?.imageUrl}
               onLoad={onImageLoad}
               draggable={false}
-              alt={firstImage.alt}
+              alt={secondImage?.alt || 'Before Image'}
             />
           </div>
           <div
